@@ -1,0 +1,50 @@
+<form #myform="ngForm" method="post" class="container col-md-4" (ngSubmit)="createUser(myform.value)">
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" class="form-control" required [(ngModel)]="user.firstname">
+      </div>
+    
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" class="form-control" required [(ngModel)]="user.lastName">
+      </div>
+    
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="form-control" required [(ngModel)]="user.email">
+      </div>
+    
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" required [(ngModel)]="user.password">
+      </div>
+    
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" [(ngModel)]="user.phoneNumber">
+      </div>
+    
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" class="form-control" [(ngModel)]="user.address">
+      </div>
+    
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" class="form-control" [(ngModel)]="user.city">
+      </div>
+    
+      <div class="form-group">
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" class="form-control" [(ngModel)]="user.state">
+      </div>
+    
+      <div class="form-group">
+        <label for="zipCode">Zip Code</label>
+        <input type="number" id="zipCode" name="zipCode" class="form-control" [(ngModel)]="user.zipCode">
+      </div>
+    <!-- Adjust your form fields to match the entity's attributes -->
+    <!-- Add fields for address, city, state, zipCode, role, etc. -->
+  
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>

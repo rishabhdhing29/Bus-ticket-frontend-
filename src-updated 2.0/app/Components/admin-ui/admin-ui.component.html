@@ -1,0 +1,32 @@
+<p>WELCOME TO ADMIN DASHBOARD</p>
+<!-- <button  type="button" class="btn btn-primary"  (click)="getAllEmployees()" >Display All Employeess</button>
+
+<div class="container">
+<table class="table table-primary col-sm-5">
+
+   <tr><th>SNO.</th><th></th><th>ENAME</th><th>SALARY</th><th>DOJ</th> <th>DELETE</th></tr> 
+<tr *ngFor="let emp of empList; index as i"><td>{{i+1}}</td> <td>{{emp.eid}}</td><td>{{emp.ename}}</td><td>{{emp.salary}}</td> <td>{{emp.doj}}</td>  
+
+      <td><button type="button" class="btn btn-danger"  (click)="deleteById(emp.eid)" >Delete</button></td>
+
+</tr>
+
+</table>
+</div> -->
+
+
+
+<!-- <button  type="button" class="btn btn-primary"  (click)="getAllAdmins()" >Display All Admins</button>
+
+<div class ="container">
+
+      <table class="table table-primary col sm-5">
+      <tr><th>SNO.</th><th>firstName</th><th>email</th></tr>
+      <tr *ngFor="let admin of adminList; index as i"><td>{{i+1}}</td> <td>{{admin.firstName}}</td> <td>{{admin.email}}</td></tr>
+</table>
+</div> -->
+
+
+<button type="button" class="btn btn-primary" (click)="getalladmins()">Display All Admins</button>
+<button type="button" (click)="updateAdmin(admin.adminId)">Update Admin</button>
+<button type="button" class="btn btn-danger" (click)="logout()">Logout</button>

@@ -1,0 +1,37 @@
+/* img {
+
+    
+    max-width: 100%;
+      max-height: auto;
+      display: block; 
+       margin: auto; 
+ }  
+ body {
+    margin: 0;
+    overflow: hidden;  
+   }
+  form{
+    position: absolute;
+    z-index: 999;
+  }   */
+  .container {
+    position: relative;
+    
+  }
+  
+  .background-image {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    display: block;
+  }
+  
+  .search-form {
+    position: absolute;
+    top: 50%; /* Adjust to position vertically */
+    right: 10%; /* Adjust to position horizontally */
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,50 @@
+<p>update-admin works!</p>
+<form (ngSubmit)="updateAdmin()" class="form-horizontal">
+    <div class="form-group">
+      <label for="adminId" class="col-sm-2 control-label">Admin Id</label>
+      <div class="col-sm-10">
+        <input type="number" id="adminId" [(ngModel)]="admin.adminId" name="adminId" class="form-control" required>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="firstName" class="col-sm-2 control-label">First Name</label>
+      <div class="col-sm-10">
+        <input type="text" id="firstName" [(ngModel)]="admin.firstName" name="firstName" class="form-control" required>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="lastName" class="col-sm-2 control-label">Last Name</label>
+      <div class="col-sm-10">
+        <input type="text" id="lastName" [(ngModel)]="admin.lastName" name="lastName" class="form-control" required>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" id="email" [(ngModel)]="admin.email" name="email" class="form-control" required>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="password" class="col-sm-2 control-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" id="password" [(ngModel)]="admin.password" name="password" class="form-control" required>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="phoneNumber" class="col-sm-2 control-label">Phone Number</label>
+      <div class="col-sm-10">
+        <input type="text" id="phoneNumber" [(ngModel)]="admin.phoneNumber" name="phoneNumber" class="form-control" required>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">Update Admin</button>
+      </div>
+    </div>
+  </form>
